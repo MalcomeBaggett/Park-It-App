@@ -1,4 +1,6 @@
 import axios from "axios";
+const API_URL = process.env.REACT_APP_NPS_BASE_URL;
+const API_KEY = process.env.REACT_APP_NPS_API_KEY;
 
 const baseApiCall = async (url, params = null) => {
   const requestConfig = {
